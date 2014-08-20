@@ -1,0 +1,37 @@
+h3
+  i.fa.fa-lightbulb-o.fa-lg
+  |  LED Strip
+
+//
+div.row
+  div.col-md-12
+    div#audio-visual(ng-init="init()")
+
+
+div.panel.panel-primary
+  div.panel-heading
+    h3.panel-title Colors
+
+  div.panel-body.content
+    div.row
+      div.col-md-4
+        label Red ({{rgb.r}})
+        input(type="range" min="0", max="255" step="1" ng-model="rgb.r")
+        br
+        label Green ({{rgb.g}})
+        input(type="range" min="0", max="255" step="1" ng-model="rgb.g")
+        br
+        label Blue ({{rgb.b}})
+        input(type="range" min="0", max="255" step="1" ng-model="rgb.b")
+
+      div.col-md-4.col-md-offset-1
+        div.col-md-4.swatch.center(style="background-color:rgba({{d_rgb.r}}, {{d_rgb.g}}, {{d_rgb.b}}, 1)")
+
+    div.row
+      div.col-md-2
+        button.btn.btn-primary.btn-block(ng-click="demo()")
+          | Demo!!
+
+      div.col-md-2
+        button.btn.btn-primary.btn-block(ng-click="off()")
+          | Off!

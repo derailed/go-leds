@@ -1,0 +1,20 @@
+@import ../../bower_components/bootstrap/dist/css/bootstrap.css
+@import ../../bower_components/Bootflat/bootflat/scss/bootflat.scss
+@import ../../bower_components/font-awesome/scss/font-awesome.scss
+
+body
+  color: #ccc
+
+.swatch
+  @include radius($type: border-radius, $value: $panel-radius)
+  @include box-shadow($value: $panel-shadow)
+
+  border:       1px black solid
+  width:        400px
+  height:       180px
+  margin-left:  50px
+
+
+div#visualization
+  min-height:       255px
+  background-color: black
