@@ -9,7 +9,7 @@ boards supporting PWM logic.
 
 # The Circuit
 
-![Circuit](http://derailed.github.io/go-leds/assets/a.png)
+![Circuit](http://derailed.github.io/go-leds/assets/circuit.JPG)
 
 # Install
 
